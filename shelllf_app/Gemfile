@@ -48,5 +48,8 @@ end
 #pry
 gem 'pry-rails'
 
+#paperclip
+gem "paperclip", "~> 4.1"
+
 #google api helper
 #gem 'gdata'
