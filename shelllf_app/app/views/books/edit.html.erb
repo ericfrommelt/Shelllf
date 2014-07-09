@@ -1,5 +1,6 @@
 <h2>Edit Book</h2>
-<%= form_for(@book) do |f| %>
+
+<%= form_for @book, :html => { :multipart => true } do |f| %>
 
   <%= f.label :title %>
   <%= f.text_field :title %>
@@ -15,6 +16,8 @@
 
   <%= f.label :notes %>
   <%= f.text_area :notes, size: '60x12' %>
+
+  <%= f.file_field :photo %>
 
   <%= f.submit %>
 
