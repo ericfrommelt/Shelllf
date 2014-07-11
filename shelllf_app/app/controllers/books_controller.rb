@@ -41,6 +41,18 @@ class BooksController < ApplicationController
     redirect_to books_path
   end
 
+  def search
+    @results = Gbook.search_by_title(params[:search])
+  end
+
+  def add_new
+    new_book = Gbook.search_by_title(params[:gbook_id_number])
+    @book = Book.find_or_create_by(new_book.first)
+    redirect_to book_path(@book)
+  end
+
+  private
+
   def book_params
     params.require(:book).permit(:title, :author, :publisher, :year_published, :notes, :photo)
   end

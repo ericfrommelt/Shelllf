@@ -62,4 +62,7 @@ Rails.application.routes.draw do
   get '/login' => 'sessions#new'
   post '/sessions' => 'sessions#create'
   get '/logout' => 'sessions#destroy'
+
+  get 'search' => 'books#search', as: 'book_search_path'
+  post 'add_new' => 'books#add_new', as: 'new_book_by_id'
 end
