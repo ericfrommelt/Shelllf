@@ -1,0 +1,16 @@
+<h2>Search results</h2>
+
+<div>
+  <% @results.each do |result| %>
+    <h4><%= result[:title] %></h4>
+    <li>Author:<%= result[:author] %></li>
+    <li><%= result[:year_published] %></li>
+    <li><%= result[:publisher] %></li>
+    <li><%= result[:gbook_id_number] %></li>
+
+    <%= form_tag('/add_new',method: :post) do |f| %>
+      <%= hidden_field_tag :gbook_id_number, result[:gbook_id_number] %>
+      <%= submit_tag 'Add to Database' %>
+    <% end %>
+  <% end %>
+</div>

@@ -1,0 +1,11 @@
+body { background: #fff; font-family: helvetica, sans-serif; }
+img { max-width: 100%; }
+header { text-align: center; }
+a { text-decoration: none; }
+ul { list-style: none; padding: 0 }
+.container  { position: relative; width: 1120px; margin: 0 auto; padding: 0; }
+.container .column,
+.container .columns { float: left; display: inline; margin: 10px; }
+.row  { margin-bottom: 20px; }
+.container .four.columns  { width: 260px; }
+.nav { text-align: right; }

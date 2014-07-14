@@ -1,0 +1,5 @@
+<%= link_to 'Add a book', new_book_path(@book) %>
+<%= form_tag('/search', method: 'get') do %>
+  <%= search_field_tag 'search' %>
+  <%= submit_tag 'Search' %>
+<% end %>

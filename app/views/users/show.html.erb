@@ -1,0 +1,11 @@
+<h2>Hi <%= @user.first_name %> !</h2>
+
+<% @user.books.each do |book| %>
+  <h3><%= link_to book.title, book %></h3>
+  <ul>
+    <li><%= book.author %></li>
+    <li><%= book.publisher %></li>
+    <li><%= book.year_published %></li>
+  </ul>
+  <%= link_to 'Edit', edit_book_path(book) %>
+<% end %>

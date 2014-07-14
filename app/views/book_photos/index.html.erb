@@ -1,0 +1,7 @@
+<h2>Book Photos</h2>
+
+<% @book_photos.each do |photo| %>
+  <ul>
+    <li><%= image_tag photo.photo.url %></li>
+  </ul>
+<% end %>
