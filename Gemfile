@@ -53,4 +53,4 @@ gem "paperclip", "~> 4.1"
 
 gem 'httparty'
 
-gem 'googlebooks'
+gem 'rails_12factor', group: :production
