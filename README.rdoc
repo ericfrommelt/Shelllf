@@ -3,7 +3,7 @@
 Shelllf allows designers to manage thier book collections.
 
 
-* User stories: (https://trello.com/b/G0hkAQun/eric-frommelt-shelllf) 
+* User stories: https://trello.com/b/G0hkAQun/eric-frommelt-shelllf
 
 * System dependencies
 
