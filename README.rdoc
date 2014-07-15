@@ -1,11 +1,9 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Shelllf allows designers to manage thier book collections.
 
-Things you may want to cover:
 
-* Ruby version
+* [User Stories](https://trello.com/b/G0hkAQun/eric-frommelt-shelllf "Title") 
 
 * System dependencies
 
