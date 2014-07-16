@@ -6,7 +6,6 @@ class BooksController < ApplicationController
 
   def show
     @book = Book.find(params[:id])
-    #This line needs addresed
     @book_photo = BookPhoto.find_by(book_id: @book.id)
   end
 
