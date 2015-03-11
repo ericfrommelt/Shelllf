@@ -2,7 +2,7 @@ class Gbook
 
   def self.search_by_title(book_title)
     search_url = 'https://www.googleapis.com/books/v1/volumes?q='
-    key = 'AIzaSyBXSDSCv0uf7GNc33AQwtAmCSXs_mAJM5Y'
+    key = Rails.application.secrets.GOOGLE_BOOKS_API
     api_response = HTTParty.get(URI.escape(search_url + book_title + '&key=' + key))
     search_results = api_response['items']
 
