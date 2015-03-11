@@ -49,8 +49,8 @@ end
 gem 'pry-rails'
 
 #paperclip
-gem "paperclip", "~> 4.1"
+gem 'paperclip', '~> 4.1'
 
 gem 'httparty'
 
-gem 'rails_12factor', group: :production
+# gem 'rails_12factor', group: :production

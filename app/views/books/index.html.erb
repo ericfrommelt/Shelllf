@@ -1,11 +1,9 @@
 <h2>Shelllf</h2>
 
 <%= render partial: 'book_search' %>
-
-
 <% @books.each do |book| %>
   <div class="four columns">
-    
+
     <h3><%= link_to book.title, book %></h3>
     <ul>
       <li><%= book.author %></li>

@@ -33,7 +33,7 @@ class BookPhotosController < ApplicationController
   end
 
 
-
+  private
   def photo_params
     return params.require(:photo).permit(:photo_file_name, :photo_content_type, :photo_file_size, :book_id)
   end

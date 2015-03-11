@@ -11,6 +11,7 @@
   <li><%= @book.author %></li>
   <li><%= @book.publisher %></li>
   <li><%= @book.year_published %></li>
+  <li><%= @book.notes %></li>
 </ul>
 <%= link_to 'Edit', edit_book_path(@book) %>
 <%= link_to 'Delete', @book, method: :delete %>

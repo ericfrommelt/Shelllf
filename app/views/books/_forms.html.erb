@@ -1,0 +1,25 @@
+<%= form_for @book, :html => { :multipart => true } do |f| %>
+
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <%= f.label :author %>
+  <%= f.text_field :author %>
+
+  <%= f.label :publisher %>
+  <%= f.text_field :publisher %>
+
+  <%= f.label :year_published %>
+  <%= f.text_field :year_published %>
+
+  <%= f.label :notes %>
+  <%= f.text_area :notes, size: '60x12' %>
+
+  <!-- Is there another way to do this? -->
+  <%= f.fields_for :book_photos do |builder| %>
+    <%= builder.label :photo, 'Photo:' %>
+    <%= builder.file_field :photo %>
+  <% end %>
+
+  <%= f.submit %>
+<% end %>
